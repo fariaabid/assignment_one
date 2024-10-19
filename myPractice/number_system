@@ -1,0 +1,29 @@
+<?php
+
+// example: Conversion Between Number Systems
+
+
+// Convert Decimal to Other Number Systems
+
+// decimal to binary
+$decimal = 25;
+echo "The binary equivalent of decimal={$decimal} is ". decbin($decimal) . "\n";
+
+// decimal to octal
+echo "The octal equivalent of decimal={$decimal} is ". decoct($decimal) . "\n";
+
+// decimal to hexadecimal
+echo "The hexadecimal equivalent of decimal={$decimal} is ". dechex($decimal) . "\n";
+
+// binary to decimal
+$binary = "11001";
+echo "The deccimal equivalent of binary={$binary} is ". bindec($binary) . "\n";
+
+// binary to octal
+echo "The octal equivalent of binary={$binary} is " . decoct($binary) . "\n";
+
+// binary to hexadecimal
+$binary_to_decimal = bindec($binary);
+$decimal_to_hex = dechex($binary_to_decimal);
+echo "The hexadecimal equivalent of binary={$binary} is {$decimal_to_hex} \n";
+
